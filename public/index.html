@@ -3,26 +3,66 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Quick persistent JSON storage for prototypes and hackathons. No server setup needed - just store your JSON data and access it via REST API anywhere. Perfect for frontend developers and students." />
-    <meta name="keywords" content="JSON storage API, prototype backend, hackathon backend, no-setup backend, persistent JSON endpoint, REST API, frontend development, JSONPlaceholder alternative" />
+    <meta
+      name="description"
+      content="Quick persistent JSON storage for prototypes and hackathons. No server setup needed - just store your JSON data and access it via REST API anywhere. Perfect for frontend developers and students."
+    />
+    <meta
+      name="keywords"
+      content="JSON storage API, prototype backend, hackathon backend, no-setup backend, persistent JSON endpoint, REST API, frontend development, JSONPlaceholder alternative"
+    />
     <meta name="author" content="JSONVault" />
-    <meta property="og:title" content="JSONVault - Instant Backend for Your Prototypes" />
-    <meta property="og:description" content="Skip the backend setup. Store JSON data instantly and access it anywhere via API. Perfect for hackathons, prototypes, and learning." />
+    <meta
+      property="og:title"
+      content="JSONVault - Instant Backend for Your Prototypes"
+    />
+    <meta
+      property="og:description"
+      content="Skip the backend setup. Store JSON data instantly and access it anywhere via API. Perfect for hackathons, prototypes, and learning."
+    />
     <meta property="og:type" content="website" />
-    <title>JSONVault - Instant Persistent JSON Backend | No Server Setup Required</title>
+    <title>
+      JSONVault - Instant Persistent JSON Backend | No Server Setup Required
+    </title>
     <link rel="preload" href="/style.css" as="style" />
     <link rel="stylesheet" href="/style.css" />
+    <link rel="icon" type="image/png" href="image.png" />
   </head>
   <body>
     <div class="container">
       <header class="app-header">
         <div class="logo">
           <div class="logo-icon" aria-hidden="true">
-            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="8" y="14" width="20" height="16" rx="2" stroke="currentColor" stroke-width="2.5" fill="none"/>
-              <path d="M12 14V10C12 6.68629 14.6863 4 18 4C21.3137 4 24 6.68629 24 10V14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
-              <circle cx="18" cy="22" r="2" fill="currentColor"/>
-              <path d="M18 24V26" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            <svg
+              width="36"
+              height="36"
+              viewBox="0 0 36 36"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                x="8"
+                y="14"
+                width="20"
+                height="16"
+                rx="2"
+                stroke="currentColor"
+                stroke-width="2.5"
+                fill="none"
+              />
+              <path
+                d="M12 14V10C12 6.68629 14.6863 4 18 4C21.3137 4 24 6.68629 24 10V14"
+                stroke="currentColor"
+                stroke-width="2.5"
+                stroke-linecap="round"
+              />
+              <circle cx="18" cy="22" r="2" fill="currentColor" />
+              <path
+                d="M18 24V26"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
             </svg>
           </div>
           <div class="brand">
@@ -189,7 +229,10 @@
 
       <footer class="app-footer">
         <p>
-          Built in a weekend because I needed it. Now you can use it too. 🚀
+          Built in a weekend. Use it, enjoy it, and feel free to break it 🚀
+        </p>
+        <p class="footer-funny" id="footerFunny" aria-hidden="false">
+          If it explodes, take a photo — that's how new features are born.
         </p>
       </footer>
     </div>
@@ -202,14 +245,103 @@
         <div class="terms-body">
           <p><strong>Welcome to JSONVault!</strong></p>
           <p>By using this service, you agree to the following:</p>
-          <!-- <ul>
-            <li>Data stored is automatically deleted after 24 hours</li>
-            <li>Do not store sensitive or personal information</li>
-            <li>This is a free service with no uptime guarantees</li>
-            <li>Your data is stored unencrypted on our server</li>
-            <li>We reserve the right to remove any content at any time</li>
-            <li>Use at your own risk - no liability for data loss</li>
-          </ul> -->
+          <ul>
+            <li>
+              By using this service, you agree to these terms. If you don't
+              agree, don't use it.
+            </li>
+            <li>
+              We provide a free JSON storage API with public endpoints. No
+              signup, no authentication.
+            </li>
+            <li>
+              All stored data is automatically deleted after 24 hours. This is
+              not a permanent storage solution.
+            </li>
+            <li>
+              Service is provided "as-is" with zero guarantees, warranties, or
+              promises of uptime.
+            </li>
+            <li>
+              We can change, limit, or shut down the service at any time without
+              notice.
+            </li>
+            <li>
+              Your data doesn't require authentication = anyone with the URL can
+              access it. Don't store sensitive info.
+            </li>
+            <li>
+              Do not store passwords, API keys, secrets, personal data, illegal
+              content, or malware.
+            </li>
+            <li>
+              Don't abuse the service with spam, DDoS attacks, or malicious
+              activity. You'll get banned.
+            </li>
+            <li>
+              Don't use this as your production database. It's for prototypes,
+              hackathons, and development only.
+            </li>
+            <li>
+              We may view, moderate, or delete stored data for any reason
+              without notice.
+            </li>
+            <li>
+              We are not responsible for data loss, corruption, or service
+              interruptions. Back up anything important.
+            </li>
+            <li>
+              We are not responsible for what users store, share, or do with
+              this service.
+            </li>
+            <li>
+              We are not responsible for how users use the API endpoints or what
+              they build with them.
+            </li>
+            <li>
+              You are solely responsible for your content, your usage, and any
+              legal consequences.
+            </li>
+            <li>
+              We are not liable for any illegal, harmful, or malicious content
+              stored by users.
+            </li>
+            <li>
+              We do not endorse, verify, or take responsibility for
+              user-generated content.
+            </li>
+            <li>
+              We may implement rate limits, storage limits, or usage caps at any
+              time.
+            </li>
+            <li>
+              We reserve the right to delete content that violates these terms
+              or any applicable laws.
+            </li>
+            <li>
+              We have zero liability for damages, data loss, security breaches,
+              or problems caused by this service.
+            </li>
+            <li>
+              You agree to indemnify and not sue us if something goes wrong.
+            </li>
+            <li>
+              No accounts = no way to recover lost URLs or prove ownership. Save
+              your endpoints.
+            </li>
+            <li>
+              You must be 13+ to use this service. Under 18? Get parental
+              permission.
+            </li>
+            <li>
+              We can update these terms anytime. Continued use means you accept
+              the changes.
+            </li>
+            <li>
+              TL;DR: Don't be evil, don't store sensitive data, use at your own
+              risk, we're not responsible for what you do. 🚀
+            </li>
+          </ul>
           <p class="terms-note">
             💡 This service is designed for prototyping and hackathons only.
           </p>
@@ -223,5 +355,31 @@
       </div>
     </div>
     <script src="/app.js" defer></script>
+    <script>
+      (function () {
+        // Small rotation of quips for the footer. Safe, no external network calls.
+        const quips = [
+          "If it explodes, take a photo — that's how new features are born.",
+          "We removed a bug. It's probably hiding somewhere else now.",
+          "This feature was handcrafted by a coffee-fueled artisan.",
+          "If it works, it's intentional. If it doesn't, it's a feature.",
+          "Free support: we listen to complaints and cry quietly.",
+          "Not responsible for spontaneous enlightenment. Use responsibly.",
+        ];
+
+        function pickQuip() {
+          return quips[Math.floor(Math.random() * quips.length)];
+        }
+
+        const el = document.getElementById("footerFunny");
+        if (!el) return;
+        // Show a random quip, keep content for no-JS users as fallback
+        el.textContent = pickQuip();
+        // subtle fade-in
+        el.style.transition = "opacity 320ms ease";
+        el.style.opacity = "0";
+        requestAnimationFrame(() => (el.style.opacity = "1"));
+      })();
+    </script>
   </body>
 </html>

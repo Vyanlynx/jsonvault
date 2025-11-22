@@ -85,7 +85,9 @@ const setDynamicConfig = async (req, res) => {
       success: true,
       message: "Data saved successfully",
       key: key.trim(),
-      accessUrl: `/getData?id=${encodeURIComponent(key.trim())}`,
+      accessUrl: `https://jsonvault-cy79.onrender.com/get?id=${encodeURIComponent(
+        key.trim()
+      )}`,
     });
   } catch (err) {
     await logError(err);
